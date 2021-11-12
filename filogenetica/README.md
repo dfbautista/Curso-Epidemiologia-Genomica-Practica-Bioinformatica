@@ -3,14 +3,14 @@ Descargar alineamiento de las secuencias:
   wget https://raw.githubusercontent.com/dfbautista/Curso-Epidemiologia-Genomica-Practica-Bioinformatica/main/filogenetica/aln_secuencias_sinUTRs.fasta
 
 Selección del modelo:
-  el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m TSETONLY
+  el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m TESTONLY
   
-  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TESTONLY
+  *iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TESTONLY*
 
 Correr filogenia:
   el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m {modelo} -bb {núm bootstrap} -redo
   
-  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TIM2+F+I -bb 1000 -redo
+  *iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TIM2+F+I -bb 1000 -redo*
   
 Salidas:
   iqtree genera varios archivos, entre ellos los del árbol filogenético en formato newick (archivo .treefile)
