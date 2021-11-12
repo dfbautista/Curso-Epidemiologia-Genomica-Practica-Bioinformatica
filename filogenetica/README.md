@@ -1,6 +1,6 @@
 Descargar alineamiento de las secuencias:
   
-  wget https://raw.githubusercontent.com/dfbautista/Curso-Epidemiologia-Genomica-Practica-Bioinformatica/main/filogenetica/aln_secuencias_sinUTRs.fasta
+  *wget https://raw.githubusercontent.com/dfbautista/Curso-Epidemiologia-Genomica-Practica-Bioinformatica/main/filogenetica/aln_secuencias_sinUTRs.fasta*
 
 Selección del modelo:
   el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m TESTONLY
